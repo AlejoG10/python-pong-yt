@@ -62,9 +62,6 @@ class Ball:
 		self.posX += self.dx
 		self.posY += self.dy
 
-	def increase_speed(self, velX):
-		self.dx += velX
-
 	def wall_collision(self):
 		self.dy = -self.dy
 
@@ -190,7 +187,7 @@ draw_board()
 # -------
 paddle1 = Paddle( screen, WHITE, 15, HEIGHT//2 - 60, 20, 120 )
 paddle2 = Paddle( screen, WHITE, WIDTH - 20 - 15, HEIGHT//2 - 60, 20, 120 )
-ball = Ball( screen, WHITE, WIDTH//2, HEIGHT//2, 10 )
+ball = Ball( screen, WHITE, WIDTH//2, HEIGHT//2, 12 )
 collision = CollisionManager()
 score1 = PlayerScore( screen, '0', WIDTH//4, 15 )
 score2 = PlayerScore( screen, '0', WIDTH - WIDTH//4, 15 )
