@@ -196,6 +196,7 @@ score2 = PlayerScore( screen, '0', WIDTH - WIDTH//4, 15 )
 # VARIABLES
 # ---------
 playing = False
+clock = pygame.time.Clock()
 
 # --------
 # MAINLOOP
@@ -283,16 +284,5 @@ while True:
 	score1.show()
 	score2.show()
 
+	clock.tick(40)
 	pygame.display.update()
-
-
-
-
-
-
-
-
-
-
-
-
